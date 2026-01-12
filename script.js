@@ -6,7 +6,7 @@ const x_score = document.querySelector("[data-score='x']");
 const draw_score = document.querySelector("[data-score='draw']");
 const o_score = document.querySelector("[data-score='o']");
 
-//From section Events Display
+//From Events Display section
 const winMessage = document.querySelector(".win-message");
 const turnDisplay = document.querySelector(".turn-display");
 
@@ -22,7 +22,7 @@ let x_points = 0;
 let o_points = 0;
 let d_points = 0;
 
-// Add o X or O in the box
+// Add X or O in the box
 function handleBoxClick(e) {
     if (e.currentTarget.innerText !== "") return;
 
