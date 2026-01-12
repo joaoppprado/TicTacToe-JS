@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe - Jogo da Velha</title>
+        <!-- link CSS -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="title">
+                    <span class="title_part">Tic</span>
+                    <span class="title_part">Tac</span>
+                    <span class="title_part">Toe</span>
+                </h1>
+            </div>
+            <main class="interface">
+                <section class="score-board">
+                    <div class="score-board_box">
+                        <p>Player X</p>
+                        <p class="score-board_points" data-score="x">0</p>
+                    </div>
+                    <div class="score-board_box">
+                        <p>Draw</p>
+                        <p class="score-board_points" data-score="draw">0</p>
+                    </div>
+                    <div class="score-board_box">
+                        <p>Player O</p>
+                        <p class="score-board_points" data-score="o">0</p>
+                    </div>
+                </section>
+                <section class="board">
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                    <div class="board_box empty"></div>
+                </section>
+                <section class="display-events">
+                    <div class="win-message">Game Over.<span></span></div>
+                    <div class="turn-display"><span></span> turn</div>
+                </section>
+                <button class="btn btn--new-game">New Game</button>
+            </main>
+        </div>
+        <div class="overlay">
+            <div class="modal">
+                <p><strong>Do you want to reset the score?</strong></p>
+                <div class="modal_buttons">
+                    <button class="modal-btn modal--btn-yes" id="yesBtn" title="This will remove all the points">
+                        Yes
+                    </button>
+                    <button class="modal-btn modal--btn-no" id="noBtn" title="The points made earlier will remain">
+                        No
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- script -->
+        <script src="./script.js"></script>
+    </body>
+</html>
