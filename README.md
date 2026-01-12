@@ -1,7 +1,7 @@
 # Tic Tac Toe (Jogo da Velha)
 <p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> </p>
 
-<img width="1382" height="948" alt="image" src="https://github.com/user-attachments/assets/654b6015-c716-4869-b6ba-7c16e7f0675d" />
+<img width="1380" height="939" alt="image" src="https://github.com/user-attachments/assets/b58dd5bd-50c2-465a-915a-3b0b0fbc1b04" />
 
 > Este é um projeto clássico de Tic Tac Toe desenvolvido para praticar lógica de programação, manipulação de DOM e controle de estado com JavaScript puro. O jogo conta com placar acumulativo, detecção de vitória/empate e uma interface moderna com temas escuros e animações.
 
