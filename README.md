@@ -1,34 +1,37 @@
-Tic Tac Toe (Jogo da Velha)
-📋 Descrição
-Este é um projeto clássico de Tic Tac Toe desenvolvido para praticar lógica de programação, manipulação de DOM e controle de estado com JavaScript puro. O jogo conta com placar acumulativo, detecção de vitória/empate e uma interface moderna com temas escuros e animações.
+# Tic Tac Toe (Jogo da Velha)
+<p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> </p>
 
 <img width="1382" height="948" alt="image" src="https://github.com/user-attachments/assets/654b6015-c716-4869-b6ba-7c16e7f0675d" />
 
-🚀 Tecnologias Utilizadas
-HTML5: Estrutura semântica do tabuleiro e modais.
+> Este é um projeto clássico de Tic Tac Toe desenvolvido para praticar lógica de programação, manipulação de DOM e controle de estado com JavaScript puro. O jogo conta com placar acumulativo, detecção de vitória/empate e uma interface moderna com temas escuros e animações.
 
-CSS3: Estilização baseada em variáveis (CSS Variables), Flexbox e Grid Layout para responsividade.
+## 🚀 Tecnologias Utilizadas
+- **HTML5:** Estrutura semântica do tabuleiro e modais.
 
-JavaScript (Vanilla): Lógica de alternância de turnos, verificação de condições de vitória e gerenciamento de pontuação.
+- **CSS3:** Estilização baseada em variáveis (CSS Variables), Flexbox e Grid Layout para responsividade.
 
-✨ Funcionalidades
-Placar em Tempo Real: Rastreia vitórias do Jogador X, Jogador O e empates.
+- **JavaScript (Vanilla):** Lógica de alternância de turnos, verificação de condições de vitória e gerenciamento de pontuação.
 
-Sistema de Turnos: Identificação visual de qual jogador deve jogar no momento.
+## ✨ Funcionalidades
+- **Placar em Tempo Real:** Rastreia vitórias do Jogador X, Jogador O e empates.
 
-Validação de Vitória: Destaque visual nas casas que formaram a combinação vencedora através de animações CSS.
+- **Sistema de Turnos:** Identificação visual de qual jogador deve jogar no momento.
 
-Modal de Confirmação: Proteção ao reiniciar o placar para evitar perda acidental de progresso.
+- **Validação de Vitória:** Destaque visual nas casas que formaram a combinação vencedora através de animações CSS.
 
-🔧 Como Rodar o Projeto
+- **Modal de Confirmação:** Proteção ao reiniciar o placar para evitar perda acidental de progresso.
+
+## 🔧 Como Rodar o Projeto
 Clone este repositório:
 
-Bash
-
+```Bash
 git clone https://github.com/SEU_USUARIO/tictactoe.git
+```
+
 Navegue até a pasta do projeto:
 
-Bash
-
+```Bash
 cd tictactoe
+```
+
 Abra o arquivo index.html no seu navegador de preferência.
