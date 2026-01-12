@@ -258,6 +258,8 @@ body {
 
 .winCombination {
     animation: borderSlide 0.3s linear;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
     animation-fill-mode: forwards;
     border: 2px solid hsl(140, 91%, 32%);
     background-color: hsla(140, 40%, 15%, 0.3);
