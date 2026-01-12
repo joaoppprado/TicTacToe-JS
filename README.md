@@ -22,16 +22,6 @@
 - **Modal de Confirmação:** Proteção ao reiniciar o placar para evitar perda acidental de progresso.
 
 ## 🔧 Como Rodar o Projeto
-Clone este repositório:
+- Basta baixar o zip do arquivo, extrair a pasta e abrir o arquivo index.html no seu navegador de preferência.
+<img width="923" height="414" alt="image" src="https://github.com/user-attachments/assets/9b782a98-8db7-436b-9b83-b462f9407290" />
 
-```Bash
-git clone https://github.com/SEU_USUARIO/tictactoe.git
-```
-
-Navegue até a pasta do projeto:
-
-```Bash
-cd tictactoe
-```
-
-Abra o arquivo index.html no seu navegador de preferência.
