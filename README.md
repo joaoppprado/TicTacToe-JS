@@ -8,7 +8,7 @@
 ## 🚀 Tecnologias Utilizadas
 - **HTML5:** Estrutura semântica do tabuleiro e modais.
 
-- **CSS3:** Estilização baseada em variáveis (CSS Variables), Flexbox e Grid Layout para responsividade.
+- **CSS3:** Estilização baseada em variáveis (CSS Variables), Flexbox e Grid Layout.
 
 - **JavaScript (Vanilla):** Lógica de alternância de turnos, verificação de condições de vitória e gerenciamento de pontuação.
 
