@@ -1,28 +1,21 @@
-//New Game button
 const newGameBtn = document.querySelector(".btn--new-game");
 
-//Points display
 const x_score = document.querySelector("[data-score='x']");
 const draw_score = document.querySelector("[data-score='draw']");
 const o_score = document.querySelector("[data-score='o']");
 
-//From Events Display section
 const winMessage = document.querySelector(".win-message");
 const turnDisplay = document.querySelector(".turn-display");
 
-//Board
 const boxes = document.querySelectorAll(".board_box");
 
-//Overlay
 const overlay = document.querySelector(".overlay");
 
-//Variables
 let playerTurn = "x";
 let x_points = 0;
 let o_points = 0;
 let d_points = 0;
 
-// Add X or O in the box
 function handleBoxClick(e) {
     if (e.currentTarget.innerText !== "") return;
 
@@ -38,7 +31,6 @@ function handleBoxClick(e) {
     }
 }
 
-//Initializing the game
 function initializing() {
     winMessage.setAttribute("hidden", true);
     turnDisplay.setAttribute("hidden", true);
@@ -55,7 +47,6 @@ function initializing() {
     });
 }
 
-//Starting a game
 function start() {
     boxes.forEach((box) => {
         box.innerText = "";
@@ -70,7 +61,6 @@ function start() {
     turnDisplay.querySelector("span").innerText = playerTurn;
 }
 
-//Player Turn Change
 function handleChangeTurn(player) {
     if (player === "x") {
         playerTurn = "o";
@@ -81,7 +71,6 @@ function handleChangeTurn(player) {
     }
 }
 
-//Check if there is a winner.
 function checkWin() {
     const winConditions = [
         //Rows
@@ -101,7 +90,6 @@ function checkWin() {
         const v0 = boxes[winConditions[i][0]].innerHTML; // Checks the first box
         const v1 = boxes[winConditions[i][1]].innerHTML; // Checks the second box
         const v2 = boxes[winConditions[i][2]].innerHTML; // Checks the third box
-        //Check if the selected boxes have the same value.
         if (v0 != "" && v0 === v1 && v0 === v2) {
             haveWinner = true;
             turnDisplay.setAttribute("hidden", true);
@@ -122,7 +110,6 @@ function checkWin() {
     return haveWinner;
 }
 
-//Check if have a draw
 function checkDraw(haveWinner) {
     if (!haveWinner) {
         let isDraw = true;
@@ -147,7 +134,6 @@ function checkDraw(haveWinner) {
     }
 }
 
-//Add Points
 function scoreUpdate(player) {
     if (player === "x") {
         x_points++;
@@ -161,7 +147,6 @@ function scoreUpdate(player) {
     }
 }
 
-//reset the score
 function resetScore() {
     x_points = 0;
     o_points = 0;
@@ -173,7 +158,6 @@ function resetScore() {
 
 initializing();
 
-//Calls Start function
 newGameBtn.addEventListener("click", () => {
     if (x_points > 0 || d_points > 0 || o_points > 0) {
         overlay.classList.add("overlayAnim");
@@ -182,13 +166,11 @@ newGameBtn.addEventListener("click", () => {
     }
 });
 
-//Close the modal
 document.getElementById("noBtn").addEventListener("click", () => {
     overlay.classList.remove("overlayAnim");
     start();
 });
 
-// calls resetScore function and close the modal
 document.getElementById("yesBtn").addEventListener("click", () => {
     overlay.classList.remove("overlayAnim");
     resetScore();
